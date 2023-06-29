@@ -1,0 +1,334 @@
+:root {
+    --iris: #4d5ae5;
+    --ocean: #404bbf;
+    --navy-blue: #2e2f42;
+    --green: #31d0aa;
+    --slate: #434455;
+    --lite-slate: #8e8f99;
+    --corn-flower: #e7e9fc;
+    --cloud: #f4f4fd;
+    --white: #ffffff;
+    --dairy: #fcfcfc;
+    --navy-blue-modal: rgba(46, 47, 66, 0.4);
+    --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1158px){
+    
+    .container {
+        width: 100%;
+        max-width: 1158px;
+        padding: 0 15px 0 15px;
+        }
+    .header-menu{
+        display: flex;
+        gap: 24px;
+    }
+    .address-list{
+        display: flex;
+        gap: 40px;
+    }
+
+    .header-btn {
+        display: none;
+    }
+
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-2x.jpg);
+    }
+}
+    .points {
+        padding: 120px 0;
+    }
+    
+    .points-item-block {
+        display: flex;
+    }   
+
+    .points-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .points-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .points-list-item-title {
+        text-transform: none;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+    }
+
+    .doing {
+        padding-bottom: 120px;
+        display: flex;
+    }
+
+    .team {
+        background-color: var(--cloud);
+        margin: 0 auto;
+        padding: 120px 0;
+    }
+
+    .team-list{
+        display: flex;
+    }
+
+    .team-list-item {
+        width: calc((100% - 72px) / 4);
+        margin: 0;
+    }
+    
+    .customers {
+        padding: 120px 0;
+    }
+
+    .customers-item {
+        width: 168px;
+    }
+
+    .customers-list-list {
+        gap: 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .portfolio-list{
+        display: flex;
+        gap: 24px;
+    }
+
+
+    .button-list{
+        justify-content: center;
+    }
+    
+    .portfolio-link{
+        width: calc((100% - 48px) / 3);
+    }
+
+    .footer {
+        background-color: var(--navy-blue);
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-logo {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .footer-logo-p {
+        margin-right: 120px;
+    }
+
+    .footer-container {
+        flex-wrap: no-wrap;
+        gap: 0;
+        display: flex;
+        align-items: baseline;
+    }
+
+    .footer-form {
+        display: flex;
+    }
+
+    .footer-soc-block {
+        margin-right: 80px;
+    }
+
+    .footer-modal-label {
+        display: block;
+    }
+
+    .footer-form-container{
+        margin-top: 0;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
+
+    .footer-btn {
+        margin-top: 0;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1157px){
+    .container {
+        width: 100%;
+        max-width: 768px;
+        padding: 0 16px 0 16px;
+    }
+
+    .header-menu{
+        display: flex;
+        gap: 24px;
+    }
+
+    .address-list{
+        display: block;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .address-list-link{
+        font-size: 12px;
+        letter-spacing: 0.48px;
+        padding-bottom: 0; 
+        padding-top: 0;
+    }
+
+    .header-btn{
+        display: none;
+    }
+    .hero-title {
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {}
+
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bg-tablet-2x.jpg);
+    }
+    .points-list{
+        display: flex;
+        gap: 72px 24px;
+        flex-wrap: wrap;
+    }
+
+    .points-list-item {
+        width: 356px;
+        padding-bottom: 0;
+    }
+
+
+    .points-list-item-title{
+        justify-content: start;
+    }
+
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 64px 24px;
+        justify-content: center;
+    }
+        
+    .team-list-item {
+        width: 256px;
+        margin: 0;
+        
+    }
+
+    .customers-list {
+        gap: 72px 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .customers-item {
+        width: 168px;
+    }
+
+    .button-list{
+        justify-content: center;
+    }
+
+    .portfolio-list{
+        gap: 72px 24px;
+    }
+
+    .portfolio-link{
+        width: 356px;
+    }
+    .footer-logo {
+        display: flex;
+    }
+    
+    .footer-logo-p {
+        margin-right: 24px;
+        display: block;
+    }
+    
+    .footer-container {
+        display: flex;
+        gap: 72px 24px;
+        justify-content: center;
+    }
+    
+
+    .footer-soc-block{
+        display: flex;
+        margin: 0;
+    }
+    .footer-paragraph {
+        width: 264px;
+    }
+
+    .footer-form{
+        display: flex;
+        align-items: baseline;
+        gap: 24px;
+    }
+    
+    .footer-soc-paragraph{
+        display: inline-flex;
+    }
+    
+    .footer-list-soc{
+        justify-content: start;
+    }
+    .footer-modal-label {
+        display: block;
+    }
+    
+    .footer-form-container {
+    }
+    
+    .footer-input {
+        width: 264px;
+    }
+
+    .footer-modal-label{}
+}
