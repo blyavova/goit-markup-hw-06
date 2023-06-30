@@ -13,6 +13,17 @@
     --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 428px) {
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                    url(../images/hero-bg-mob-2x.jpg)
+            }
+    }
+}
 @media screen and (min-width: 1158px){
     
     .container {
@@ -34,30 +45,23 @@
     }
 
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        .hero {
-        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)),
-                url(../images/people-office-2x.jpg)
-                url(../images/people-office.jpg)
-            }
-
-        .team{
-            background-image: 
-            url(../images/team-card1-x2.jpeg)
-            url(../images/team-card1.jpg)
-            url(../images/team-card2-x2.jpeg)
-            url(../images/team-card2.jpg)
-            url(../images/team-card3-x2.jpeg)
-            url(../images/team-card3.jpg)
-            url(../images/team-card4-x2.jpeg)
-            url(../images/team-card4.jpg)
-        }
-
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
     
-}
+            .hero {
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                        rgba(46, 47, 66, 0.7)),
+                        url(../images/people-office.jpg)
+            }
+            .hero{
+                background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                            rgba(46, 47, 66, 0.7)),
+                        url(../images/people-office-2x.jpg)
+            }
+        }
+    
+
     .points {
         padding: 120px 0;
     }
@@ -142,11 +146,11 @@
     }
 
     .footer-logo-p {
-        margin-right: 120px;
+        display: block;
     }
 
     .footer-container {
-        flex-wrap: no-wrap;
+        flex-wrap: nowrap;
         gap: 0;
         display: flex;
         align-items: baseline;
@@ -158,8 +162,12 @@
 
     .footer-soc-block {
         margin-right: 80px;
+        display: block;
     }
 
+    .footer-soc-paragraph{
+        display: block;
+    }
     .footer-modal-label {
         display: block;
     }
@@ -216,7 +224,9 @@
     }
 
     .address-list {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
         padding-top: 16px;
         padding-bottom: 16px;
     }
@@ -236,7 +246,12 @@
         margin-bottom: 36px;
         font-size: 56px;
         line-height: 1.07;
-        max-width: 496px;
+        width: 496px;
+    }
+
+
+    .hero{
+        padding: 112px 0;
     }
 
     @media (min-device-pixel-ratio: 2),
@@ -247,7 +262,13 @@
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero-bg-tablet.jpg);
-        }}
+        }
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-tablet-2x.jpg);
+        }
+    }
 
         .points-list {
             display: flex;
@@ -275,7 +296,6 @@
         .team-list-item {
             width: 256px;
             margin: 0;
-
         }
 
         .customers-list {
@@ -310,14 +330,16 @@
         }
 
         .footer-container {
+            flex-wrap: wrap;
+            justify-content: start;
+            width: 584px;
             display: flex;
             gap: 72px 24px;
-            justify-content: center;
         }
 
 
         .footer-soc-block {
-            display: flex;
+            display: block;
             margin: 0;
         }
 
@@ -332,7 +354,7 @@
         }
 
         .footer-soc-paragraph {
-            display: inline-flex;
+            display: block;
         }
 
         .footer-list-soc {
@@ -343,7 +365,8 @@
             display: block;
         }
 
-        .footer-form-container {}
+        .footer-form-container {
+        }
 
         .footer-input {
             width: 264px;
