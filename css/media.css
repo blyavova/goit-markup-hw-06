@@ -31,9 +31,19 @@
 @media screen and (min-width: 320px) and (max-width: 410px) {
     .modal {
             max-width: 320px;
-    
         }
+
+    .footer-input{
+        min-width: 290px;
+    }
+    
+    .mob-tel-item{
+        font-size: 25px;
+    }
+
 }
+
+
 
 @media screen and (min-width: 1158px){
     
@@ -72,6 +82,15 @@
             }
         }
     
+    
+    .hero{
+        padding: 188px 0
+    }
+
+    .hero-title{
+        font-size: 56px;
+        max-width: 496px;
+    }
 
     .points {
         padding: 120px 0;
@@ -87,6 +106,7 @@
     }
 
     .points-list-item {
+        padding-bottom: 0;
         width: calc((100% - 72px) / 4);
     }
 
@@ -136,7 +156,6 @@
         gap: 24px;
     }
 
-
     .button-list{
         justify-content: center;
     }
@@ -158,6 +177,7 @@
 
     .footer-logo-p {
         display: block;
+        margin-right: 120px;
     }
 
     .footer-container {
@@ -188,7 +208,8 @@
     }
 
     .footer-input {
-        width: 264px;
+        min-width: 264px;
+        max-width: 264px;
     }
 
     .footer-btn {
@@ -257,13 +278,14 @@
         margin-bottom: 36px;
         font-size: 56px;
         line-height: 1.07;
-        width: 496px;
+        max-width: 496px;
     }
 
 
     .hero{
         padding: 112px 0;
     }
+
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -289,7 +311,7 @@
 
         .points-list-item {
             width: 356px;
-            padding-bottom: 0;
+            margin-bottom: 0;
         }
 
 
@@ -336,7 +358,6 @@
         }
 
         .footer-logo-p {
-            margin-right: 24px;
             display: block;
         }
 
