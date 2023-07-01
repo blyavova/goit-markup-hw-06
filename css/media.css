@@ -22,7 +22,6 @@
                         rgba(46, 47, 66, 0.7)),
                     url(../images/hero-bg-mob-2x.jpg)
             }
-
     }
 
 }
@@ -41,6 +40,13 @@
         font-size: 25px;
     }
 
+
+    .mob-list-soc{
+        gap: 36px;
+    }
+    .mob-soc-item{
+        min-width: 40px;
+    }
 }
 
 
@@ -254,13 +260,15 @@
         display: flex;
         gap: 24px;
     }
+    
+    .header-container{
+        align-items: center;
+    }
 
     .address-list {
         display: flex;
         flex-direction: column;
         gap: 12px;
-        padding-top: 16px;
-        padding-bottom: 16px;
     }
 
     .address-list-link {

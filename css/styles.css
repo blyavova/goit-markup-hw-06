@@ -975,6 +975,10 @@ header {
   overflow: auto;
 }
 
+.mob-menu-address{
+  margin-top: auto;
+}
+
 .mob-modal-btn {
   margin-left: auto;
   margin-bottom: 32px;
@@ -999,11 +1003,13 @@ header {
 }
 
 .mob-menu-list {
-  margin-bottom: 284px;
   display: flex;
   flex-direction: column;
 }
 
+.mob-address-container{
+  margin-top: 284px;
+}
 
 
 
