@@ -970,13 +970,14 @@ header {
   padding: 24px 24px 40px 40px;
   background-color: var(--white);
   display: flex;
-  flex-direction: column;
+
   justify-content: space-between;
   overflow: auto;
 }
 
 .mob-menu-address{
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .mob-modal-btn {
@@ -1008,7 +1009,7 @@ header {
 }
 
 .mob-address-container{
-  margin-top: 284px;
+  margin-top: auto;
 }
 
 
